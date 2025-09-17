@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: ps1-15-app
+    env: python
+    pythonVersion: 3.12
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
